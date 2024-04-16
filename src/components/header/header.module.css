@@ -1,0 +1,21 @@
+.title {
+  color: #ff385c;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1em;
+}
+
+.addExercise {
+  color: #222222;
+  cursor: pointer;
+  align-self: center;
+  padding: 10px;
+}
+
+.addExercise:hover {
+  background-color: #b0b0b0;
+  border-radius: 20px;
+}

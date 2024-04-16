@@ -10,3 +10,14 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.deleteBtn {
+  background-color: #ff385c;
+  border-color: #ff385c;
+  border-width: 0px;
+  color: #f7f7f7;
+  padding-inline: 10px;
+  padding-block: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -2,7 +2,12 @@ import { useHomeData } from '../../context/home.context';
 import styles from './home.module.css';
 
 export const Home = () => {
-  const { exercises } = useHomeData();
+  const { exercises, setExercises } = useHomeData();
+
+  const handleDelete = (id) => {
+    const updatedExercises = exercises.filter((exercise) => exercise.id !== id);
+    setExercises(updatedExercises);
+  };
 
   return (
     <div className={styles.home}>
@@ -22,6 +27,9 @@ export const Home = () => {
           <p>
             <strong>Secondary Muscles:</strong> {exercise.secondaryMuscles.join(', ')}
           </p>
+          <button onClick={() => handleDelete(exercise.id)} className={styles.deleteBtn}>
+            Delete
+          </button>
         </div>
       ))}
     </div>

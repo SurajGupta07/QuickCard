@@ -1,13 +1,6 @@
 import './App.css';
-import HomeProvider from './context/home.context';
-import { Home } from './pages';
+import { Body } from './pages';
 
 export const App = () => {
-  return (
-    <div className="App">
-      <HomeProvider>
-        <Home />
-      </HomeProvider>
-    </div>
-  );
+  return <Body />;
 };

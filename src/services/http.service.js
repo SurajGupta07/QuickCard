@@ -3,7 +3,7 @@ import { CONSTANTS } from '../types/constants';
 import { API_BASE_URL, RAPID_API_KEY } from '../utils/config';
 
 export const HttpService = async (param) => {
-  const { url, method, baseUrlRequired = true, body = undefined, header } = param;
+  const { url, method, baseUrlRequired = true, body = undefined, header, params } = param;
 
   let headers;
   let requestUrl = API_BASE_URL;
@@ -24,6 +24,7 @@ export const HttpService = async (param) => {
     url: requestUrl,
     data: body,
     headers: headers,
+    params: params,
   };
 
   const resp = await axios(axiosParams).catch((error) => {
