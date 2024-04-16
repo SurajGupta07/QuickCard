@@ -1,0 +1,12 @@
+.exerciseCard {
+  margin-bottom: 20px;
+  padding-inline: 20px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
